@@ -1,6 +1,6 @@
 # Ingress NGINX to GKE Gateway API mapping
 
-This is an initial stab at mapping commonly encountered ingress ngnix annotations (on `Ingress` YAML) to GKE Gateway capabilies (including some additional that are planned for 2026).
+This is an initial stab at mapping commonly encountered `ingress-NGINX` annotations (on `Ingress` YAML) to GKE Gateway capabilies (including some additional capabilites that are planned for 2026).
 
 
   | Annotation                                                        | Gateway API support / approach | Notes                                                                                                                                                                        |
