@@ -1,5 +1,7 @@
 # ngnix-to-gateway
 
+<table width="100%">
+  
 | Annotation                                                        | Gateway API support / approach | Notes                                                                                                                                                                        |
 | :---------------------------------------------------------------: | :----------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | nginx.ingress.kubernetes.io/affinity                              | yes                            | currently only affinity via Generated Cookie or Client IP affinity are supported - load balancer supports additional approaches but must use standalone NEG approach https://docs.cloud.google.com/kubernetes-engine/docs/how-to/configure-gateway-resources#session_affinity |
@@ -51,3 +53,5 @@
 | nginx.ingress.kubernetes.io/use-regex                             | no                             | load balancer supports it via standalone NEGs, but not exposed via GKE Gateway currently - https://docs.cloud.google.com/load-balancing/docs/url-map-concepts#regex-support                                                                           |
 | nginx.ingress.kubernetes.io/whitelist-source-range                | yes                            | via Cloud Armor integration https://docs.cloud.google.com/kubernetes-engine/docs/how-to/configure-gateway-resources#configure_cloud_armor                                                                                                                                           |
 | nginx.ingress.kubernetes.io/x-forwarded-prefix                    | no                             | nginx specific? Inherits behavior of the underlying LB. i.e. https://docs.cloud.google.com/load-balancing/docs/https#target-proxies & https://docs.cloud.google.com/load-balancing/docs/l7-internal#target_proxy                                                                                               |
+
+</table>
